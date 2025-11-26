@@ -3,6 +3,8 @@
     --var-background-color: #D5E1EF;
     --var-primary-text-color: #1F314F;
     --var-secondary-text-color: #68778D;
+    --var-primary-text-weight: 700;
+    --var-secondary-text-weight: 400;
 }
 
 body {
@@ -10,6 +12,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0;
     block-size: 100vb;
     inline-size: 100vi;
 }
@@ -35,7 +38,7 @@ article {
 }
 
 h1 {
-    font-weight: bold;
+    font-weight: var(--var-primary-text-weight);
     color: var(--var-primary-text-color);
     letter-spacing: 0px;
     line-height: 1.2;
@@ -45,7 +48,7 @@ h1 {
 }
 
 h2 {
-    font-weight: 400;
+    font-weight: var(--var-secondary-text-weight);
     color: var(--var-secondary-text-color);
     letter-spacing: 0.2px;
     line-height: 1.4;
