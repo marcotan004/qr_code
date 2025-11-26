@@ -31,6 +31,8 @@ main {
 
 .qr {
     border-radius: inherit;
+    width: 18rem;
+    height: 18rem;
 }
 
 section {
