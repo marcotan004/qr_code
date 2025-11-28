@@ -15,12 +15,14 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 img {
     display: inline-flex;
-    border-radius: 0.625rem;
     max-width: 100%;
+    border-radius: 0.625rem;
 }
 
 body {
@@ -38,24 +40,28 @@ body {
 .card {
     background-color: white;
     max-width: 20rem;
-    box-sizing: border-box;
     padding: 1rem;
     border-radius: 1.25rem;
     & > * {
         margin-block-end: 1.5rem;
     }
-    
 }
 
 .text-padding {
     padding-inline: 1rem;
-    margin-block: 1rem;
+}
+
+.text-container {
+    & > * {
+        margin-block-end: 1rem;
+    }
 }
 
 .card-title {
     font-weight: var(--var-primary-text-weight);
     color: var(--var-primary-text-color);
     font-size: var(--var-primary-text-size);
+    line-height: 120%;
 }
 
 .card-text {
@@ -63,5 +69,5 @@ body {
     color: var(--var-secondary-text-color);
     font-size: var(--var-secondary-text-size);
     letter-spacing: 0.0125rem;
-    line-height: 1.4;
+    line-height: 140%;
 }
